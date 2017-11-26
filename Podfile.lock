@@ -1,0 +1,25 @@
+PODS:
+  - Instamojo (1.0.12)
+  - InstaMojoiOS (0.0.3)
+
+DEPENDENCIES:
+  - Instamojo (from `https://github.com/Instamojo/ios-sdk.git`, tag `1.0.12`)
+  - InstaMojoiOS
+
+EXTERNAL SOURCES:
+  Instamojo:
+    :git: https://github.com/Instamojo/ios-sdk.git
+    :tag: 1.0.12
+
+CHECKOUT OPTIONS:
+  Instamojo:
+    :git: https://github.com/Instamojo/ios-sdk.git
+    :tag: 1.0.12
+
+SPEC CHECKSUMS:
+  Instamojo: e5c57b5edf9ef7e788e74f1733249cf35e4f83a7
+  InstaMojoiOS: dcea8eda14732edcd055323f6f9b90ad4b7aee0f
+
+PODFILE CHECKSUM: da47b49d9c7a05c4dc1cdf304abd0abd0a934136
+
+COCOAPODS: 1.3.1

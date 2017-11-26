@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import InstaMojoiOS
 
 class ViewController: UIViewController {
 
@@ -15,11 +16,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func startPaymentButtonAction(_ sender: UIButton) {
+        
+        IMConfiguration.sharedInstance.setupOrder(purpose: "Testing", buyerName: "Shub", emailId: "shubhakeerti@gmail.com", mobile: "8718699108", amount: "10", environment: .Test, on: self) { (success, message) in
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                if success {
+                    let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            })
+        }
     }
-
-
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E481E6D9BA637BA427AEFF /* Pods_InstaMojoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751EBDE71059A48DAA71354 /* Pods_InstaMojoDemo.framework */; };
 		9E2A0BDB1FCB393400D469D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A0BDA1FCB393400D469D3 /* AppDelegate.swift */; };
 		9E2A0BDD1FCB393400D469D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A0BDC1FCB393400D469D3 /* ViewController.swift */; };
 		9E2A0BE01FCB393400D469D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2A0BDE1FCB393400D469D3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4751EBDE71059A48DAA71354 /* Pods_InstaMojoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaMojoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2A0BD71FCB393400D469D3 /* InstaMojoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMojoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2A0BDA1FCB393400D469D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E2A0BDC1FCB393400D469D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9E2A0BE11FCB393400D469D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E2A0BE41FCB393400D469D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E2A0BE61FCB393400D469D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9478782A5292D416F70C21 /* Pods-InstaMojoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaMojoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE5D5BA53A82107AE3026B0E /* Pods-InstaMojoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaMojoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E481E6D9BA637BA427AEFF /* Pods_InstaMojoDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				9E2A0BD91FCB393400D469D3 /* InstaMojoDemo */,
 				9E2A0BD81FCB393400D469D3 /* Products */,
+				E14E840283597E984EAEB399 /* Pods */,
+				B5F9BCC342657C0E4314F75F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = InstaMojoDemo;
 			sourceTree = "<group>";
 		};
+		B5F9BCC342657C0E4314F75F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4751EBDE71059A48DAA71354 /* Pods_InstaMojoDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E14E840283597E984EAEB399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE5D5BA53A82107AE3026B0E /* Pods-InstaMojoDemo.debug.xcconfig */,
+				EE9478782A5292D416F70C21 /* Pods-InstaMojoDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E2A0BE91FCB393400D469D3 /* Build configuration list for PBXNativeTarget "InstaMojoDemo" */;
 			buildPhases = (
+				9B848D4F552A5984EF4C4AE3 /* [CP] Check Pods Manifest.lock */,
 				9E2A0BD31FCB393300D469D3 /* Sources */,
 				9E2A0BD41FCB393300D469D3 /* Frameworks */,
 				9E2A0BD51FCB393300D469D3 /* Resources */,
+				F956D52CF0922BE52EB20D42 /* [CP] Embed Pods Frameworks */,
+				BF1BB910E562C3F96C907D13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B848D4F552A5984EF4C4AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaMojoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF1BB910E562C3F96C907D13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo-resources.sh",
+				"${PODS_ROOT}/Instamojo/JuspaySafeBrowser.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F956D52CF0922BE52EB20D42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo-frameworks.sh",
+				"${PODS_ROOT}/InstaMojoiOS/InstaMojoiOS-Release-iphoneuniversal/InstaMojoiOS.framework",
+				"${PODS_ROOT}/Instamojo/Instamojo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstaMojoiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instamojo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaMojoDemo/Pods-InstaMojoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E2A0BD31FCB393300D469D3 /* Sources */ = {
@@ -272,6 +358,7 @@
 		};
 		9E2A0BEA1FCB393400D469D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE5D5BA53A82107AE3026B0E /* Pods-InstaMojoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -288,6 +375,7 @@
 		};
 		9E2A0BEB1FCB393400D469D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9478782A5292D416F70C21 /* Pods-InstaMojoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
